@@ -1,0 +1,60 @@
+.bingo-root {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 440px;
+    margin: 50px;
+    font-size: 40px;
+    background-color: aliceblue;
+    border: 5px dotted #0070c7;
+    border-radius: 40px;
+    padding: 20px 50px;
+}
+
+.bingo-pair {
+    display: flex;
+    flex-direction: row;
+    page-break-after: always;
+    /* page-break-inside: avoid; */
+    justify-content: space-around;
+}
+
+.bingo-letter {
+    color: #0070c7;
+    font-weight: 800;
+    margin: 20px 0px;
+    font-size: 50px;
+    /* background-color: #97e4fe; */
+    /* border-radius: 50%; */
+    width: 60px;
+    height: 60px;
+}
+
+.bingo-num {
+    margin: 10px 0px;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background-color: #97e4fe;
+    
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
+}
+
+.bingo-num p {
+    margin: 0px;
+    padding-top:6px;
+}
+
+@media print {
+    .bingo-pair{
+        width: 29.7cm;
+        height: 21cm;
+        /* margin: 45mm 30mm 45mm 30mm;  */
+        /* change the margins as you want them to be. */
+   } 
+   .bingo-root {
+    height: 12cm;
+    font-size: 28pt;
+   }
+  }

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:regular,bold,italic');
+
 .App {
   text-align: center;
 }
@@ -35,4 +37,9 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+body{
+  -webkit-print-color-adjust:exact !important;
+  print-color-adjust:exact !important;
 }
